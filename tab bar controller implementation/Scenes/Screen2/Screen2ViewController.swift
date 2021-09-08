@@ -69,7 +69,7 @@ class Screen2ViewController: UIViewController, Screen2DisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    view.backgroundColor = .green
+    view.backgroundColor = .white
     doSomething()
   }
   

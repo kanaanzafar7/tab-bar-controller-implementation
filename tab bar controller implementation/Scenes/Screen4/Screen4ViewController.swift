@@ -69,7 +69,7 @@ class Screen4ViewController: UIViewController, Screen4DisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    view.backgroundColor = .brown
+    view.backgroundColor = .white
     doSomething()
   }
   

@@ -69,7 +69,7 @@ class Screen3ViewController: UIViewController, Screen3DisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    view.backgroundColor = .orange
+    view.backgroundColor = .white
     doSomething()
   }
   

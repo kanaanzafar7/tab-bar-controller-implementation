@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         let vc2 = Screen2ViewController();
         let vc3 = Screen3ViewController();
         let vc4 = Screen4ViewController();
-        //        let vc5 = Screen5ViewController();
         tabBarVc.setViewControllers([vc1, vc2, vc3, vc4], animated: true)
         tabBarVc.modalPresentationStyle = .fullScreen
         if let items  = tabBarVc.tabBar.items {
@@ -49,17 +48,15 @@ extension ViewController : UITabBarControllerDelegate {
         let animationView : AnimationView = .init(name: lottieJsons[tabBarController.selectedIndex])
         animationView.frame = frame!
         animationView.loopMode = .playOnce
-        animationView.contentScaleFactor = 0.5
+        //        animationView.contentScaleFactor = 0.5
         item.view?.addSubview(animationView)
-        
         animationView.play { value in
             animationView.isHidden = true
             item.selectedImage = UIImage(named: self.selectedImages[tabBarController.selectedIndex])
-            tabBarController.tabBar.items![self.currentSelectedIndex].selectedImage = UIImage(named: self.deselectedImages[self.currentSelectedIndex])
+            if(self.currentSelectedIndex != tabBarController.selectedIndex){
+                tabBarController.tabBar.items![self.currentSelectedIndex].selectedImage = UIImage(named: self.deselectedImages[self.currentSelectedIndex])
+            }
             self.currentSelectedIndex = tabBarController.selectedIndex
         }
-        
-        
-        
     }
 }

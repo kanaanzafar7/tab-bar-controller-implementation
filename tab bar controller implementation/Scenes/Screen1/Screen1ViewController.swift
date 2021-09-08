@@ -69,7 +69,7 @@ class Screen1ViewController: UIViewController, Screen1DisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    view.backgroundColor = .red
+    view.backgroundColor = .white
     doSomething()
   }
   
