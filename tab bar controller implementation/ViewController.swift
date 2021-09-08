@@ -5,12 +5,14 @@ class ViewController: UIViewController {
     let selectedImages = ["home-selected","search-selected","saved-selected","more-selected",]
     let deselectedImages = ["home-deselected","search-deselected","saved-deselected","more-deselected",]
     let tabBarVc = UITabBarController()
-    
+    var currentSelectedIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarVc.delegate = self
     }
-    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
     
     @IBAction func onPressed(_ sender: UIButton) {
         let vc1 = Screen1ViewController();
@@ -37,9 +39,8 @@ class ViewController: UIViewController {
 extension ViewController : UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
-        //get image of ui tab bar item.
         let item = tabBarController.tabBar.items![tabBarController.selectedIndex]
-        
+        viewDidLayoutSubviews()
         let itemImageView = item.view?.subviews.filter { uiview in
             uiview is UIImageView
         }.first
@@ -48,11 +49,17 @@ extension ViewController : UITabBarControllerDelegate {
         let animationView : AnimationView = .init(name: lottieJsons[tabBarController.selectedIndex])
         animationView.frame = frame!
         animationView.loopMode = .playOnce
-        animationView.contentScaleFactor = 0.9
+        animationView.contentScaleFactor = 0.5
         item.view?.addSubview(animationView)
         
         animationView.play { value in
             animationView.isHidden = true
-            item.selectedImage = UIImage(named: self.selectedImages[tabBarController.selectedIndex])}
+            item.selectedImage = UIImage(named: self.selectedImages[tabBarController.selectedIndex])
+            tabBarController.tabBar.items![self.currentSelectedIndex].selectedImage = UIImage(named: self.deselectedImages[self.currentSelectedIndex])
+            self.currentSelectedIndex = tabBarController.selectedIndex
+        }
+        
+        
+        
     }
 }
