@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_tab_bar_controller_implementation_tab_bar_controller_implementationUITests : NSObject
+@end
+@implementation PodsDummy_Pods_tab_bar_controller_implementation_tab_bar_controller_implementationUITests
+@end

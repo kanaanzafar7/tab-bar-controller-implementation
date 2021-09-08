@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1614294459D650BAB0DF50D9 /* Pods_tab_bar_controller_implementation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5316B043A0F8E99D7E9F0BD3 /* Pods_tab_bar_controller_implementation.framework */; };
+		238FB97426E756D8008FD89D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB97326E756D8008FD89D /* AppDelegate.swift */; };
+		238FB97626E756D8008FD89D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB97526E756D8008FD89D /* SceneDelegate.swift */; };
+		238FB97826E756D8008FD89D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB97726E756D8008FD89D /* ViewController.swift */; };
+		238FB97B26E756D8008FD89D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238FB97926E756D8008FD89D /* Main.storyboard */; };
+		238FB97E26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 238FB97C26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodeld */; };
+		238FB98026E756DB008FD89D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238FB97F26E756DB008FD89D /* Assets.xcassets */; };
+		238FB98326E756DB008FD89D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238FB98126E756DB008FD89D /* LaunchScreen.storyboard */; };
+		238FB98E26E756DB008FD89D /* tab_bar_controller_implementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB98D26E756DB008FD89D /* tab_bar_controller_implementationTests.swift */; };
+		238FB99926E756DB008FD89D /* tab_bar_controller_implementationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB99826E756DB008FD89D /* tab_bar_controller_implementationUITests.swift */; };
+		23EE7E8C26E757D500C50732 /* Screen1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E8626E757D500C50732 /* Screen1Presenter.swift */; };
+		23EE7E8D26E757D500C50732 /* Screen1Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E8726E757D500C50732 /* Screen1Worker.swift */; };
+		23EE7E8E26E757D500C50732 /* Screen1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E8826E757D500C50732 /* Screen1Router.swift */; };
+		23EE7E8F26E757D500C50732 /* Screen1Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E8926E757D500C50732 /* Screen1Models.swift */; };
+		23EE7E9026E757D500C50732 /* Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E8A26E757D500C50732 /* Screen1ViewController.swift */; };
+		23EE7E9126E757D500C50732 /* Screen1Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E8B26E757D500C50732 /* Screen1Interactor.swift */; };
+		23EE7E9826E757EE00C50732 /* Screen2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E9226E757EE00C50732 /* Screen2Presenter.swift */; };
+		23EE7E9926E757EE00C50732 /* Screen2Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E9326E757EE00C50732 /* Screen2Worker.swift */; };
+		23EE7E9A26E757EE00C50732 /* Screen2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E9426E757EE00C50732 /* Screen2Router.swift */; };
+		23EE7E9B26E757EE00C50732 /* Screen2Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E9526E757EE00C50732 /* Screen2Models.swift */; };
+		23EE7E9C26E757EE00C50732 /* Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E9626E757EE00C50732 /* Screen2ViewController.swift */; };
+		23EE7E9D26E757EE00C50732 /* Screen2Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E9726E757EE00C50732 /* Screen2Interactor.swift */; };
+		23EE7EA426E757FE00C50732 /* Screen3Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E9E26E757FE00C50732 /* Screen3Presenter.swift */; };
+		23EE7EA526E757FE00C50732 /* Screen3Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7E9F26E757FE00C50732 /* Screen3Worker.swift */; };
+		23EE7EA626E757FE00C50732 /* Screen3Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EA026E757FE00C50732 /* Screen3Router.swift */; };
+		23EE7EA726E757FE00C50732 /* Screen3Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EA126E757FE00C50732 /* Screen3Models.swift */; };
+		23EE7EA826E757FE00C50732 /* Screen3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EA226E757FE00C50732 /* Screen3ViewController.swift */; };
+		23EE7EA926E757FE00C50732 /* Screen3Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EA326E757FE00C50732 /* Screen3Interactor.swift */; };
+		23EE7EB026E7580F00C50732 /* Screen4Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EAA26E7580F00C50732 /* Screen4Presenter.swift */; };
+		23EE7EB126E7580F00C50732 /* Screen4Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EAB26E7580F00C50732 /* Screen4Worker.swift */; };
+		23EE7EB226E7580F00C50732 /* Screen4Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EAC26E7580F00C50732 /* Screen4Router.swift */; };
+		23EE7EB326E7580F00C50732 /* Screen4Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EAD26E7580F00C50732 /* Screen4Models.swift */; };
+		23EE7EB426E7580F00C50732 /* Screen4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EAE26E7580F00C50732 /* Screen4ViewController.swift */; };
+		23EE7EB526E7580F00C50732 /* Screen4Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EAF26E7580F00C50732 /* Screen4Interactor.swift */; };
+		23EE7EBC26E7582000C50732 /* Screen5Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EB626E7582000C50732 /* Screen5Presenter.swift */; };
+		23EE7EBD26E7582000C50732 /* Screen5Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EB726E7582000C50732 /* Screen5Worker.swift */; };
+		23EE7EBE26E7582000C50732 /* Screen5Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EB826E7582000C50732 /* Screen5Router.swift */; };
+		23EE7EBF26E7582000C50732 /* Screen5Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EB926E7582000C50732 /* Screen5Models.swift */; };
+		23EE7EC026E7582000C50732 /* Screen5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EBA26E7582000C50732 /* Screen5ViewController.swift */; };
+		23EE7EC126E7582000C50732 /* Screen5Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE7EBB26E7582000C50732 /* Screen5Interactor.swift */; };
+		23EE7ED226E76EB000C50732 /* more.json in Resources */ = {isa = PBXBuildFile; fileRef = 23EE7ED126E76EB000C50732 /* more.json */; };
+		23EE7ED426E76EB900C50732 /* saved.json in Resources */ = {isa = PBXBuildFile; fileRef = 23EE7ED326E76EB900C50732 /* saved.json */; };
+		23EE7ED626E76EC100C50732 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = 23EE7ED526E76EC100C50732 /* search.json */; };
+		23EE7ED826E76ECC00C50732 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 23EE7ED726E76ECC00C50732 /* home.json */; };
+		2A10B92BDF3B7135A492D75A /* Pods_tab_bar_controller_implementation_tab_bar_controller_implementationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DAA749E2066C684D010787 /* Pods_tab_bar_controller_implementation_tab_bar_controller_implementationUITests.framework */; };
+		AECCB8B5D29A70FF31A19D0C /* Pods_tab_bar_controller_implementationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290BA7C5A5FB95244323CAE4 /* Pods_tab_bar_controller_implementationTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		238FB98A26E756DB008FD89D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 238FB96826E756D8008FD89D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 238FB96F26E756D8008FD89D;
+			remoteInfo = "tab bar controller implementation";
+		};
+		238FB99526E756DB008FD89D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 238FB96826E756D8008FD89D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 238FB96F26E756D8008FD89D;
+			remoteInfo = "tab bar controller implementation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2308B7CAF679FC795164F017 /* Pods-tab bar controller implementation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab bar controller implementation.debug.xcconfig"; path = "Target Support Files/Pods-tab bar controller implementation/Pods-tab bar controller implementation.debug.xcconfig"; sourceTree = "<group>"; };
+		238FB97026E756D8008FD89D /* tab bar controller implementation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tab bar controller implementation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		238FB97326E756D8008FD89D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		238FB97526E756D8008FD89D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		238FB97726E756D8008FD89D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		238FB97A26E756D8008FD89D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		238FB97D26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tab_bar_controller_implementation.xcdatamodel; sourceTree = "<group>"; };
+		238FB97F26E756DB008FD89D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		238FB98226E756DB008FD89D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		238FB98426E756DB008FD89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		238FB98926E756DB008FD89D /* tab bar controller implementationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tab bar controller implementationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		238FB98D26E756DB008FD89D /* tab_bar_controller_implementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab_bar_controller_implementationTests.swift; sourceTree = "<group>"; };
+		238FB98F26E756DB008FD89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		238FB99426E756DB008FD89D /* tab bar controller implementationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tab bar controller implementationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		238FB99826E756DB008FD89D /* tab_bar_controller_implementationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab_bar_controller_implementationUITests.swift; sourceTree = "<group>"; };
+		238FB99A26E756DB008FD89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EE7E8626E757D500C50732 /* Screen1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1Presenter.swift; sourceTree = "<group>"; };
+		23EE7E8726E757D500C50732 /* Screen1Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1Worker.swift; sourceTree = "<group>"; };
+		23EE7E8826E757D500C50732 /* Screen1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1Router.swift; sourceTree = "<group>"; };
+		23EE7E8926E757D500C50732 /* Screen1Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1Models.swift; sourceTree = "<group>"; };
+		23EE7E8A26E757D500C50732 /* Screen1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1ViewController.swift; sourceTree = "<group>"; };
+		23EE7E8B26E757D500C50732 /* Screen1Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1Interactor.swift; sourceTree = "<group>"; };
+		23EE7E9226E757EE00C50732 /* Screen2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2Presenter.swift; sourceTree = "<group>"; };
+		23EE7E9326E757EE00C50732 /* Screen2Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2Worker.swift; sourceTree = "<group>"; };
+		23EE7E9426E757EE00C50732 /* Screen2Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2Router.swift; sourceTree = "<group>"; };
+		23EE7E9526E757EE00C50732 /* Screen2Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2Models.swift; sourceTree = "<group>"; };
+		23EE7E9626E757EE00C50732 /* Screen2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2ViewController.swift; sourceTree = "<group>"; };
+		23EE7E9726E757EE00C50732 /* Screen2Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2Interactor.swift; sourceTree = "<group>"; };
+		23EE7E9E26E757FE00C50732 /* Screen3Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3Presenter.swift; sourceTree = "<group>"; };
+		23EE7E9F26E757FE00C50732 /* Screen3Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3Worker.swift; sourceTree = "<group>"; };
+		23EE7EA026E757FE00C50732 /* Screen3Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3Router.swift; sourceTree = "<group>"; };
+		23EE7EA126E757FE00C50732 /* Screen3Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3Models.swift; sourceTree = "<group>"; };
+		23EE7EA226E757FE00C50732 /* Screen3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3ViewController.swift; sourceTree = "<group>"; };
+		23EE7EA326E757FE00C50732 /* Screen3Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3Interactor.swift; sourceTree = "<group>"; };
+		23EE7EAA26E7580F00C50732 /* Screen4Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4Presenter.swift; sourceTree = "<group>"; };
+		23EE7EAB26E7580F00C50732 /* Screen4Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4Worker.swift; sourceTree = "<group>"; };
+		23EE7EAC26E7580F00C50732 /* Screen4Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4Router.swift; sourceTree = "<group>"; };
+		23EE7EAD26E7580F00C50732 /* Screen4Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4Models.swift; sourceTree = "<group>"; };
+		23EE7EAE26E7580F00C50732 /* Screen4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4ViewController.swift; sourceTree = "<group>"; };
+		23EE7EAF26E7580F00C50732 /* Screen4Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4Interactor.swift; sourceTree = "<group>"; };
+		23EE7EB626E7582000C50732 /* Screen5Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen5Presenter.swift; sourceTree = "<group>"; };
+		23EE7EB726E7582000C50732 /* Screen5Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen5Worker.swift; sourceTree = "<group>"; };
+		23EE7EB826E7582000C50732 /* Screen5Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen5Router.swift; sourceTree = "<group>"; };
+		23EE7EB926E7582000C50732 /* Screen5Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen5Models.swift; sourceTree = "<group>"; };
+		23EE7EBA26E7582000C50732 /* Screen5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen5ViewController.swift; sourceTree = "<group>"; };
+		23EE7EBB26E7582000C50732 /* Screen5Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen5Interactor.swift; sourceTree = "<group>"; };
+		23EE7ED126E76EB000C50732 /* more.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = more.json; sourceTree = "<group>"; };
+		23EE7ED326E76EB900C50732 /* saved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = saved.json; sourceTree = "<group>"; };
+		23EE7ED526E76EC100C50732 /* search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		23EE7ED726E76ECC00C50732 /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		28EBF7983417D79A07B3746F /* Pods-tab bar controller implementation-tab bar controller implementationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab bar controller implementation-tab bar controller implementationUITests.release.xcconfig"; path = "Target Support Files/Pods-tab bar controller implementation-tab bar controller implementationUITests/Pods-tab bar controller implementation-tab bar controller implementationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		290BA7C5A5FB95244323CAE4 /* Pods_tab_bar_controller_implementationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tab_bar_controller_implementationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		454359CAF0CDB29C70622CB1 /* Pods-tab bar controller implementationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab bar controller implementationTests.release.xcconfig"; path = "Target Support Files/Pods-tab bar controller implementationTests/Pods-tab bar controller implementationTests.release.xcconfig"; sourceTree = "<group>"; };
+		5316B043A0F8E99D7E9F0BD3 /* Pods_tab_bar_controller_implementation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tab_bar_controller_implementation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A8F751D6F5B1D4DE6C5F0A /* Pods-tab bar controller implementation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab bar controller implementation.release.xcconfig"; path = "Target Support Files/Pods-tab bar controller implementation/Pods-tab bar controller implementation.release.xcconfig"; sourceTree = "<group>"; };
+		9A2AD715532DEAA753E74EA3 /* Pods-tab bar controller implementationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab bar controller implementationTests.debug.xcconfig"; path = "Target Support Files/Pods-tab bar controller implementationTests/Pods-tab bar controller implementationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1DAA749E2066C684D010787 /* Pods_tab_bar_controller_implementation_tab_bar_controller_implementationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tab_bar_controller_implementation_tab_bar_controller_implementationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B480608594FE5C9D13360C45 /* Pods-tab bar controller implementation-tab bar controller implementationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab bar controller implementation-tab bar controller implementationUITests.debug.xcconfig"; path = "Target Support Files/Pods-tab bar controller implementation-tab bar controller implementationUITests/Pods-tab bar controller implementation-tab bar controller implementationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		238FB96D26E756D8008FD89D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1614294459D650BAB0DF50D9 /* Pods_tab_bar_controller_implementation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238FB98626E756DB008FD89D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECCB8B5D29A70FF31A19D0C /* Pods_tab_bar_controller_implementationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238FB99126E756DB008FD89D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A10B92BDF3B7135A492D75A /* Pods_tab_bar_controller_implementation_tab_bar_controller_implementationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		238FB96726E756D8008FD89D = {
+			isa = PBXGroup;
+			children = (
+				238FB97226E756D8008FD89D /* tab bar controller implementation */,
+				238FB98C26E756DB008FD89D /* tab bar controller implementationTests */,
+				238FB99726E756DB008FD89D /* tab bar controller implementationUITests */,
+				238FB97126E756D8008FD89D /* Products */,
+				52B5AEFBB0939C34EDF101FB /* Pods */,
+				9CDB819A042F34B3C92F3FBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		238FB97126E756D8008FD89D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				238FB97026E756D8008FD89D /* tab bar controller implementation.app */,
+				238FB98926E756DB008FD89D /* tab bar controller implementationTests.xctest */,
+				238FB99426E756DB008FD89D /* tab bar controller implementationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		238FB97226E756D8008FD89D /* tab bar controller implementation */ = {
+			isa = PBXGroup;
+			children = (
+				23EE7E8026E7579400C50732 /* Scenes */,
+				238FB97326E756D8008FD89D /* AppDelegate.swift */,
+				238FB97526E756D8008FD89D /* SceneDelegate.swift */,
+				238FB97726E756D8008FD89D /* ViewController.swift */,
+				238FB97926E756D8008FD89D /* Main.storyboard */,
+				23EE7E7F26E7578A00C50732 /* Assets */,
+				238FB98126E756DB008FD89D /* LaunchScreen.storyboard */,
+				238FB98426E756DB008FD89D /* Info.plist */,
+				238FB97C26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodeld */,
+			);
+			path = "tab bar controller implementation";
+			sourceTree = "<group>";
+		};
+		238FB98C26E756DB008FD89D /* tab bar controller implementationTests */ = {
+			isa = PBXGroup;
+			children = (
+				238FB98D26E756DB008FD89D /* tab_bar_controller_implementationTests.swift */,
+				238FB98F26E756DB008FD89D /* Info.plist */,
+			);
+			path = "tab bar controller implementationTests";
+			sourceTree = "<group>";
+		};
+		238FB99726E756DB008FD89D /* tab bar controller implementationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				238FB99826E756DB008FD89D /* tab_bar_controller_implementationUITests.swift */,
+				238FB99A26E756DB008FD89D /* Info.plist */,
+			);
+			path = "tab bar controller implementationUITests";
+			sourceTree = "<group>";
+		};
+		23EE7E7F26E7578A00C50732 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				23EE7ED726E76ECC00C50732 /* home.json */,
+				23EE7ED526E76EC100C50732 /* search.json */,
+				23EE7ED326E76EB900C50732 /* saved.json */,
+				23EE7ED126E76EB000C50732 /* more.json */,
+				238FB97F26E756DB008FD89D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		23EE7E8026E7579400C50732 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				23EE7E8526E757BB00C50732 /* Screen5 */,
+				23EE7E8426E757B600C50732 /* Screen4 */,
+				23EE7E8326E757AE00C50732 /* Screen3 */,
+				23EE7E8226E757A800C50732 /* Screen2 */,
+				23EE7E8126E757A100C50732 /* Screen1 */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		23EE7E8126E757A100C50732 /* Screen1 */ = {
+			isa = PBXGroup;
+			children = (
+				23EE7E8626E757D500C50732 /* Screen1Presenter.swift */,
+				23EE7E8726E757D500C50732 /* Screen1Worker.swift */,
+				23EE7E8826E757D500C50732 /* Screen1Router.swift */,
+				23EE7E8926E757D500C50732 /* Screen1Models.swift */,
+				23EE7E8A26E757D500C50732 /* Screen1ViewController.swift */,
+				23EE7E8B26E757D500C50732 /* Screen1Interactor.swift */,
+			);
+			path = Screen1;
+			sourceTree = "<group>";
+		};
+		23EE7E8226E757A800C50732 /* Screen2 */ = {
+			isa = PBXGroup;
+			children = (
+				23EE7E9226E757EE00C50732 /* Screen2Presenter.swift */,
+				23EE7E9326E757EE00C50732 /* Screen2Worker.swift */,
+				23EE7E9426E757EE00C50732 /* Screen2Router.swift */,
+				23EE7E9526E757EE00C50732 /* Screen2Models.swift */,
+				23EE7E9626E757EE00C50732 /* Screen2ViewController.swift */,
+				23EE7E9726E757EE00C50732 /* Screen2Interactor.swift */,
+			);
+			path = Screen2;
+			sourceTree = "<group>";
+		};
+		23EE7E8326E757AE00C50732 /* Screen3 */ = {
+			isa = PBXGroup;
+			children = (
+				23EE7E9E26E757FE00C50732 /* Screen3Presenter.swift */,
+				23EE7E9F26E757FE00C50732 /* Screen3Worker.swift */,
+				23EE7EA026E757FE00C50732 /* Screen3Router.swift */,
+				23EE7EA126E757FE00C50732 /* Screen3Models.swift */,
+				23EE7EA226E757FE00C50732 /* Screen3ViewController.swift */,
+				23EE7EA326E757FE00C50732 /* Screen3Interactor.swift */,
+			);
+			path = Screen3;
+			sourceTree = "<group>";
+		};
+		23EE7E8426E757B600C50732 /* Screen4 */ = {
+			isa = PBXGroup;
+			children = (
+				23EE7EAA26E7580F00C50732 /* Screen4Presenter.swift */,
+				23EE7EAB26E7580F00C50732 /* Screen4Worker.swift */,
+				23EE7EAC26E7580F00C50732 /* Screen4Router.swift */,
+				23EE7EAD26E7580F00C50732 /* Screen4Models.swift */,
+				23EE7EAE26E7580F00C50732 /* Screen4ViewController.swift */,
+				23EE7EAF26E7580F00C50732 /* Screen4Interactor.swift */,
+			);
+			path = Screen4;
+			sourceTree = "<group>";
+		};
+		23EE7E8526E757BB00C50732 /* Screen5 */ = {
+			isa = PBXGroup;
+			children = (
+				23EE7EB626E7582000C50732 /* Screen5Presenter.swift */,
+				23EE7EB726E7582000C50732 /* Screen5Worker.swift */,
+				23EE7EB826E7582000C50732 /* Screen5Router.swift */,
+				23EE7EB926E7582000C50732 /* Screen5Models.swift */,
+				23EE7EBA26E7582000C50732 /* Screen5ViewController.swift */,
+				23EE7EBB26E7582000C50732 /* Screen5Interactor.swift */,
+			);
+			path = Screen5;
+			sourceTree = "<group>";
+		};
+		52B5AEFBB0939C34EDF101FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2308B7CAF679FC795164F017 /* Pods-tab bar controller implementation.debug.xcconfig */,
+				84A8F751D6F5B1D4DE6C5F0A /* Pods-tab bar controller implementation.release.xcconfig */,
+				B480608594FE5C9D13360C45 /* Pods-tab bar controller implementation-tab bar controller implementationUITests.debug.xcconfig */,
+				28EBF7983417D79A07B3746F /* Pods-tab bar controller implementation-tab bar controller implementationUITests.release.xcconfig */,
+				9A2AD715532DEAA753E74EA3 /* Pods-tab bar controller implementationTests.debug.xcconfig */,
+				454359CAF0CDB29C70622CB1 /* Pods-tab bar controller implementationTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CDB819A042F34B3C92F3FBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5316B043A0F8E99D7E9F0BD3 /* Pods_tab_bar_controller_implementation.framework */,
+				B1DAA749E2066C684D010787 /* Pods_tab_bar_controller_implementation_tab_bar_controller_implementationUITests.framework */,
+				290BA7C5A5FB95244323CAE4 /* Pods_tab_bar_controller_implementationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		238FB96F26E756D8008FD89D /* tab bar controller implementation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238FB99D26E756DB008FD89D /* Build configuration list for PBXNativeTarget "tab bar controller implementation" */;
+			buildPhases = (
+				51471ABE6384794C59DC8D14 /* [CP] Check Pods Manifest.lock */,
+				238FB96C26E756D8008FD89D /* Sources */,
+				238FB96D26E756D8008FD89D /* Frameworks */,
+				238FB96E26E756D8008FD89D /* Resources */,
+				72BA18BD6D6D2B7F8653C75E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tab bar controller implementation";
+			productName = "tab bar controller implementation";
+			productReference = 238FB97026E756D8008FD89D /* tab bar controller implementation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		238FB98826E756DB008FD89D /* tab bar controller implementationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238FB9A026E756DB008FD89D /* Build configuration list for PBXNativeTarget "tab bar controller implementationTests" */;
+			buildPhases = (
+				B6EE1E1C262E3EBADD37B605 /* [CP] Check Pods Manifest.lock */,
+				238FB98526E756DB008FD89D /* Sources */,
+				238FB98626E756DB008FD89D /* Frameworks */,
+				238FB98726E756DB008FD89D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				238FB98B26E756DB008FD89D /* PBXTargetDependency */,
+			);
+			name = "tab bar controller implementationTests";
+			productName = "tab bar controller implementationTests";
+			productReference = 238FB98926E756DB008FD89D /* tab bar controller implementationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		238FB99326E756DB008FD89D /* tab bar controller implementationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238FB9A326E756DB008FD89D /* Build configuration list for PBXNativeTarget "tab bar controller implementationUITests" */;
+			buildPhases = (
+				DA85BB3E2DEA0259AF865B8D /* [CP] Check Pods Manifest.lock */,
+				238FB99026E756DB008FD89D /* Sources */,
+				238FB99126E756DB008FD89D /* Frameworks */,
+				238FB99226E756DB008FD89D /* Resources */,
+				99890EFE744E13006BB4E41C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				238FB99626E756DB008FD89D /* PBXTargetDependency */,
+			);
+			name = "tab bar controller implementationUITests";
+			productName = "tab bar controller implementationUITests";
+			productReference = 238FB99426E756DB008FD89D /* tab bar controller implementationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		238FB96826E756D8008FD89D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					238FB96F26E756D8008FD89D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					238FB98826E756DB008FD89D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 238FB96F26E756D8008FD89D;
+					};
+					238FB99326E756DB008FD89D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 238FB96F26E756D8008FD89D;
+					};
+				};
+			};
+			buildConfigurationList = 238FB96B26E756D8008FD89D /* Build configuration list for PBXProject "tab bar controller implementation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 238FB96726E756D8008FD89D;
+			productRefGroup = 238FB97126E756D8008FD89D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				238FB96F26E756D8008FD89D /* tab bar controller implementation */,
+				238FB98826E756DB008FD89D /* tab bar controller implementationTests */,
+				238FB99326E756DB008FD89D /* tab bar controller implementationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		238FB96E26E756D8008FD89D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EE7ED226E76EB000C50732 /* more.json in Resources */,
+				238FB98326E756DB008FD89D /* LaunchScreen.storyboard in Resources */,
+				238FB98026E756DB008FD89D /* Assets.xcassets in Resources */,
+				23EE7ED626E76EC100C50732 /* search.json in Resources */,
+				238FB97B26E756D8008FD89D /* Main.storyboard in Resources */,
+				23EE7ED826E76ECC00C50732 /* home.json in Resources */,
+				23EE7ED426E76EB900C50732 /* saved.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238FB98726E756DB008FD89D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238FB99226E756DB008FD89D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51471ABE6384794C59DC8D14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tab bar controller implementation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72BA18BD6D6D2B7F8653C75E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tab bar controller implementation/Pods-tab bar controller implementation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tab bar controller implementation/Pods-tab bar controller implementation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tab bar controller implementation/Pods-tab bar controller implementation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99890EFE744E13006BB4E41C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tab bar controller implementation-tab bar controller implementationUITests/Pods-tab bar controller implementation-tab bar controller implementationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tab bar controller implementation-tab bar controller implementationUITests/Pods-tab bar controller implementation-tab bar controller implementationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tab bar controller implementation-tab bar controller implementationUITests/Pods-tab bar controller implementation-tab bar controller implementationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6EE1E1C262E3EBADD37B605 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tab bar controller implementationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA85BB3E2DEA0259AF865B8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tab bar controller implementation-tab bar controller implementationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		238FB96C26E756D8008FD89D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EE7EA926E757FE00C50732 /* Screen3Interactor.swift in Sources */,
+				23EE7EBD26E7582000C50732 /* Screen5Worker.swift in Sources */,
+				238FB97826E756D8008FD89D /* ViewController.swift in Sources */,
+				23EE7EA526E757FE00C50732 /* Screen3Worker.swift in Sources */,
+				23EE7E8D26E757D500C50732 /* Screen1Worker.swift in Sources */,
+				23EE7EB126E7580F00C50732 /* Screen4Worker.swift in Sources */,
+				23EE7EB526E7580F00C50732 /* Screen4Interactor.swift in Sources */,
+				23EE7EBF26E7582000C50732 /* Screen5Models.swift in Sources */,
+				23EE7EBE26E7582000C50732 /* Screen5Router.swift in Sources */,
+				238FB97E26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodeld in Sources */,
+				23EE7EA626E757FE00C50732 /* Screen3Router.swift in Sources */,
+				23EE7EA426E757FE00C50732 /* Screen3Presenter.swift in Sources */,
+				23EE7EC126E7582000C50732 /* Screen5Interactor.swift in Sources */,
+				23EE7E8F26E757D500C50732 /* Screen1Models.swift in Sources */,
+				23EE7E9026E757D500C50732 /* Screen1ViewController.swift in Sources */,
+				238FB97426E756D8008FD89D /* AppDelegate.swift in Sources */,
+				23EE7E9A26E757EE00C50732 /* Screen2Router.swift in Sources */,
+				23EE7E9126E757D500C50732 /* Screen1Interactor.swift in Sources */,
+				23EE7E9C26E757EE00C50732 /* Screen2ViewController.swift in Sources */,
+				23EE7EA826E757FE00C50732 /* Screen3ViewController.swift in Sources */,
+				23EE7E9B26E757EE00C50732 /* Screen2Models.swift in Sources */,
+				23EE7E9826E757EE00C50732 /* Screen2Presenter.swift in Sources */,
+				23EE7EB226E7580F00C50732 /* Screen4Router.swift in Sources */,
+				23EE7E8E26E757D500C50732 /* Screen1Router.swift in Sources */,
+				238FB97626E756D8008FD89D /* SceneDelegate.swift in Sources */,
+				23EE7E9926E757EE00C50732 /* Screen2Worker.swift in Sources */,
+				23EE7EBC26E7582000C50732 /* Screen5Presenter.swift in Sources */,
+				23EE7EA726E757FE00C50732 /* Screen3Models.swift in Sources */,
+				23EE7EB326E7580F00C50732 /* Screen4Models.swift in Sources */,
+				23EE7E8C26E757D500C50732 /* Screen1Presenter.swift in Sources */,
+				23EE7EC026E7582000C50732 /* Screen5ViewController.swift in Sources */,
+				23EE7E9D26E757EE00C50732 /* Screen2Interactor.swift in Sources */,
+				23EE7EB426E7580F00C50732 /* Screen4ViewController.swift in Sources */,
+				23EE7EB026E7580F00C50732 /* Screen4Presenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238FB98526E756DB008FD89D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238FB98E26E756DB008FD89D /* tab_bar_controller_implementationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238FB99026E756DB008FD89D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238FB99926E756DB008FD89D /* tab_bar_controller_implementationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		238FB98B26E756DB008FD89D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 238FB96F26E756D8008FD89D /* tab bar controller implementation */;
+			targetProxy = 238FB98A26E756DB008FD89D /* PBXContainerItemProxy */;
+		};
+		238FB99626E756DB008FD89D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 238FB96F26E756D8008FD89D /* tab bar controller implementation */;
+			targetProxy = 238FB99526E756DB008FD89D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		238FB97926E756D8008FD89D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238FB97A26E756D8008FD89D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		238FB98126E756DB008FD89D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238FB98226E756DB008FD89D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		238FB99B26E756DB008FD89D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		238FB99C26E756DB008FD89D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		238FB99E26E756DB008FD89D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2308B7CAF679FC795164F017 /* Pods-tab bar controller implementation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GG3RA5G6D;
+				INFOPLIST_FILE = "tab bar controller implementation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kanaan.tab-bar-controller-implementation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		238FB99F26E756DB008FD89D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A8F751D6F5B1D4DE6C5F0A /* Pods-tab bar controller implementation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GG3RA5G6D;
+				INFOPLIST_FILE = "tab bar controller implementation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kanaan.tab-bar-controller-implementation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		238FB9A126E756DB008FD89D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2AD715532DEAA753E74EA3 /* Pods-tab bar controller implementationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GG3RA5G6D;
+				INFOPLIST_FILE = "tab bar controller implementationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kanaan.tab-bar-controller-implementationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tab bar controller implementation.app/tab bar controller implementation";
+			};
+			name = Debug;
+		};
+		238FB9A226E756DB008FD89D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454359CAF0CDB29C70622CB1 /* Pods-tab bar controller implementationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GG3RA5G6D;
+				INFOPLIST_FILE = "tab bar controller implementationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kanaan.tab-bar-controller-implementationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tab bar controller implementation.app/tab bar controller implementation";
+			};
+			name = Release;
+		};
+		238FB9A426E756DB008FD89D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B480608594FE5C9D13360C45 /* Pods-tab bar controller implementation-tab bar controller implementationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GG3RA5G6D;
+				INFOPLIST_FILE = "tab bar controller implementationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kanaan.tab-bar-controller-implementationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tab bar controller implementation";
+			};
+			name = Debug;
+		};
+		238FB9A526E756DB008FD89D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28EBF7983417D79A07B3746F /* Pods-tab bar controller implementation-tab bar controller implementationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GG3RA5G6D;
+				INFOPLIST_FILE = "tab bar controller implementationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kanaan.tab-bar-controller-implementationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tab bar controller implementation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		238FB96B26E756D8008FD89D /* Build configuration list for PBXProject "tab bar controller implementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238FB99B26E756DB008FD89D /* Debug */,
+				238FB99C26E756DB008FD89D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		238FB99D26E756DB008FD89D /* Build configuration list for PBXNativeTarget "tab bar controller implementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238FB99E26E756DB008FD89D /* Debug */,
+				238FB99F26E756DB008FD89D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		238FB9A026E756DB008FD89D /* Build configuration list for PBXNativeTarget "tab bar controller implementationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238FB9A126E756DB008FD89D /* Debug */,
+				238FB9A226E756DB008FD89D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		238FB9A326E756DB008FD89D /* Build configuration list for PBXNativeTarget "tab bar controller implementationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238FB9A426E756DB008FD89D /* Debug */,
+				238FB9A526E756DB008FD89D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		238FB97C26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				238FB97D26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodel */,
+			);
+			currentVersion = 238FB97D26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodel */;
+			path = tab_bar_controller_implementation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 238FB96826E756D8008FD89D /* Project object */;
+}

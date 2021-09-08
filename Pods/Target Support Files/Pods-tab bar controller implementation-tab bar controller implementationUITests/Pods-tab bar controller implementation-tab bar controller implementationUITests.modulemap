@@ -1,0 +1,6 @@
+framework module Pods_tab_bar_controller_implementation_tab_bar_controller_implementationUITests {
+  umbrella header "Pods-tab bar controller implementation-tab bar controller implementationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
