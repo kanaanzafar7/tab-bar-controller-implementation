@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1614294459D650BAB0DF50D9 /* Pods_tab_bar_controller_implementation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5316B043A0F8E99D7E9F0BD3 /* Pods_tab_bar_controller_implementation.framework */; };
+		2368240A26E8AB2C00386DBC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2368240926E8AB2C00386DBC /* extensions.swift */; };
 		238FB97426E756D8008FD89D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB97326E756D8008FD89D /* AppDelegate.swift */; };
 		238FB97626E756D8008FD89D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB97526E756D8008FD89D /* SceneDelegate.swift */; };
 		238FB97826E756D8008FD89D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB97726E756D8008FD89D /* ViewController.swift */; };
@@ -74,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		2308B7CAF679FC795164F017 /* Pods-tab bar controller implementation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab bar controller implementation.debug.xcconfig"; path = "Target Support Files/Pods-tab bar controller implementation/Pods-tab bar controller implementation.debug.xcconfig"; sourceTree = "<group>"; };
+		2368240926E8AB2C00386DBC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		238FB97026E756D8008FD89D /* tab bar controller implementation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tab bar controller implementation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		238FB97326E756D8008FD89D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		238FB97526E756D8008FD89D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				238FB98126E756DB008FD89D /* LaunchScreen.storyboard */,
 				238FB98426E756DB008FD89D /* Info.plist */,
 				238FB97C26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodeld */,
+				2368240926E8AB2C00386DBC /* extensions.swift */,
 			);
 			path = "tab bar controller implementation";
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 				23EE7EBF26E7582000C50732 /* Screen5Models.swift in Sources */,
 				23EE7EBE26E7582000C50732 /* Screen5Router.swift in Sources */,
 				238FB97E26E756D8008FD89D /* tab_bar_controller_implementation.xcdatamodeld in Sources */,
+				2368240A26E8AB2C00386DBC /* extensions.swift in Sources */,
 				23EE7EA626E757FE00C50732 /* Screen3Router.swift in Sources */,
 				23EE7EA426E757FE00C50732 /* Screen3Presenter.swift in Sources */,
 				23EE7EC126E7582000C50732 /* Screen5Interactor.swift in Sources */,

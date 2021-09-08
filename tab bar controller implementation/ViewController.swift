@@ -22,9 +22,8 @@ class ViewController: UIViewController {
         tabBarVc.modalPresentationStyle = .fullScreen
         if let items  = tabBarVc.tabBar.items {
             for item in items {
-                //                ite
                 item.image = UIImage(named: deselectedImages[items.firstIndex(of: item)!])
-//                item.selectedImage = UIImage(named: selectedImages[items.firstIndex(of: item)!])
+                item.selectedImage = UIImage(named: selectedImages[items.firstIndex(of: item)!])
             }
         }else {
             print("items not found.")
@@ -33,36 +32,24 @@ class ViewController: UIViewController {
         present(tabBarVc, animated: true) {
         }
     }
-    func frameForTab(atIndex index: Int) -> CGRect {
-        var frames = tabBarVc.tabBar.subviews.compactMap { (view:UIView) -> CGRect? in
-            if let view = view as? UIControl {
-               return view.frame
-            }
-            return nil
-        }
-        frames.sort { $0.origin.x < $1.origin.x }
-        if frames.count > index {
-            return frames[index]
-        }
-        return frames.last ?? CGRect.zero
-    }
-    
 }
 
 extension ViewController : UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
+        //get image of ui tab bar item.
         let item = tabBarController.tabBar.items![tabBarController.selectedIndex]
-//        item.image = deselectedImages[]
-//        item.selectedImage = nil
-        let frame = frameForTab(atIndex: tabBarController.selectedIndex);
+        
+        let itemImageView = item.view?.subviews.filter { uiview in
+            uiview is UIImageView
+        }.first
+        
+        let frame = itemImageView?.frame
         let animationView : AnimationView = .init(name: lottieJsons[tabBarController.selectedIndex])
-        animationView.frame = frame//CGRect(x: 0, y: 0, width: 300, height: 300)//view.bounds
-//        animationView.center =
+        animationView.frame = frame!
         animationView.loopMode = .playOnce
-//        animationView.animationSpeed = 0.5
         animationView.contentScaleFactor = 0.9
-        tabBarController.tabBar.addSubview(animationView)
-//        animationView.play()
+        item.view?.addSubview(animationView)
         
         animationView.play { value in
             animationView.isHidden = true
