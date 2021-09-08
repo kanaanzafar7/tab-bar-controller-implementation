@@ -48,10 +48,10 @@ extension ViewController : UITabBarControllerDelegate {
         let animationView : AnimationView = .init(name: lottieJsons[tabBarController.selectedIndex])
         animationView.frame = frame!
         animationView.loopMode = .playOnce
-        //        animationView.contentScaleFactor = 0.5
         item.view?.addSubview(animationView)
         animationView.play { value in
-            animationView.isHidden = true
+
+            animationView.removeFromSuperview()
             item.selectedImage = UIImage(named: self.selectedImages[tabBarController.selectedIndex])
             if(self.currentSelectedIndex != tabBarController.selectedIndex){
                 tabBarController.tabBar.items![self.currentSelectedIndex].selectedImage = UIImage(named: self.deselectedImages[self.currentSelectedIndex])
