@@ -5,7 +5,8 @@ class ViewController: UIViewController {
     let selectedImages = ["home-selected","search-selected","saved-selected","more-selected",]
     let deselectedImages = ["home-deselected","search-deselected","saved-deselected","more-deselected",]
     let tabBarVc = UITabBarController()
-    var currentSelectedIndex = 0
+    var currentIndex = 0
+    var lastFrameTimes : [AnimationFrameTime?] = [nil,nil,nil,nil]
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarVc.delegate = self
@@ -37,26 +38,43 @@ class ViewController: UIViewController {
 
 extension ViewController : UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        let selectedIndex = tabBarController.selectedIndex
         
-        let item = tabBarController.tabBar.items![tabBarController.selectedIndex]
+        if lastFrameTimes[currentIndex] != nil {
+            let item = tabBarController.tabBar.items![currentIndex]
+            viewDidLayoutSubviews()
+            let itemImageView = item.view?.subviews.filter { uiview in
+                uiview is UIImageView
+            }.first
+            let frame = itemImageView?.frame
+            let animationView : AnimationView = .init(name: lottieJsons[currentIndex])
+            animationView.frame = frame!
+            item.view?.addSubview(animationView)
+            animationView.play(fromFrame: lastFrameTimes[currentIndex], toFrame: 1.0, loopMode: .playOnce) { value in
+            }
+        }
+        
+        
+        let item = tabBarController.tabBar.items![selectedIndex]
         viewDidLayoutSubviews()
         let itemImageView = item.view?.subviews.filter { uiview in
             uiview is UIImageView
         }.first
-        
+
         let frame = itemImageView?.frame
         let animationView : AnimationView = .init(name: lottieJsons[tabBarController.selectedIndex])
         animationView.frame = frame!
+        
         animationView.loopMode = .playOnce
         item.view?.addSubview(animationView)
         animationView.play { value in
-
+            self.lastFrameTimes[selectedIndex] = animationView.currentFrame
             animationView.removeFromSuperview()
-            item.selectedImage = UIImage(named: self.selectedImages[tabBarController.selectedIndex])
-            if(self.currentSelectedIndex != tabBarController.selectedIndex){
-                tabBarController.tabBar.items![self.currentSelectedIndex].selectedImage = UIImage(named: self.deselectedImages[self.currentSelectedIndex])
+            item.selectedImage = UIImage(named: self.selectedImages[selectedIndex])
+            if(self.currentIndex != selectedIndex){
+                tabBarController.tabBar.items![self.currentIndex].selectedImage = UIImage(named: self.deselectedImages[self.currentIndex])
             }
-            self.currentSelectedIndex = tabBarController.selectedIndex
+            self.currentIndex = selectedIndex
         }
     }
 }
