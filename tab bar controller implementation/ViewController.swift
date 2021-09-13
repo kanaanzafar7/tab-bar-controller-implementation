@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onPressed(_ sender: UIButton) {
-        let vc1 = Screen1ViewController();
+   /*     let vc1 = Screen1ViewController();
         let vc2 = Screen2ViewController();
         let vc3 = Screen3ViewController();
         let vc4 = Screen4ViewController();
@@ -30,8 +30,12 @@ class ViewController: UIViewController {
             print("items not found.")
         }
         populateNavigationBarItemsWithViews()
-        present(tabBarVc, animated: true) {
+    */
+        present(Home(), animated: true) {
+            
         }
+//        present(tabBarVc, animated: true) {
+//        }
     }
     func populateNavigationBarItemsWithViews(){
         let itemsLength = tabBarVc.tabBar.items?.count
@@ -39,11 +43,9 @@ class ViewController: UIViewController {
         if let count = itemsLength {
             for i in 0...count - 1 {
                 let item = tabBarVc.tabBar.items![i]
-                viewDidLayoutSubviews()
                 let itemImageView = item.view?.subviews.filter { uiview in
-                    uiview is UIImageView
+                 uiview is UIImageView
                 }.first
-                
                 let frame = itemImageView?.frame
                 let animationView : AnimationView = .init(name: lottieJsons[i])
                 animationView.frame = frame!
@@ -52,15 +54,7 @@ class ViewController: UIViewController {
                 item.view?.addSubview(animationView)
                 animationView.play()
                 
-                print("----after: \(item.view?.subviews.count)")
-                item.view?.subviews.forEach({ v in
-                    print("----frame: \(v.frame)")
-                    if v is AnimationView {
-                        print("---- animationView")
-                    }else if v is UIImageView{
-                        print("---image view")
-                    }
-                })
+               
             }
             
         }

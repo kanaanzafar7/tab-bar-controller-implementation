@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1614294459D650BAB0DF50D9 /* Pods_tab_bar_controller_implementation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5316B043A0F8E99D7E9F0BD3 /* Pods_tab_bar_controller_implementation.framework */; };
+		2360EB9926EF567F002C252E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2360EB9826EF567F002C252E /* Home.swift */; };
+		2360EB9B26EF5E33002C252E /* blank_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2360EB9A26EF5E33002C252E /* blank_image.png */; };
 		2368240A26E8AB2C00386DBC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2368240926E8AB2C00386DBC /* extensions.swift */; };
 		238FB97426E756D8008FD89D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB97326E756D8008FD89D /* AppDelegate.swift */; };
 		238FB97626E756D8008FD89D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FB97526E756D8008FD89D /* SceneDelegate.swift */; };
@@ -75,6 +77,8 @@
 
 /* Begin PBXFileReference section */
 		2308B7CAF679FC795164F017 /* Pods-tab bar controller implementation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab bar controller implementation.debug.xcconfig"; path = "Target Support Files/Pods-tab bar controller implementation/Pods-tab bar controller implementation.debug.xcconfig"; sourceTree = "<group>"; };
+		2360EB9826EF567F002C252E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		2360EB9A26EF5E33002C252E /* blank_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank_image.png; sourceTree = "<group>"; };
 		2368240926E8AB2C00386DBC /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		238FB97026E756D8008FD89D /* tab bar controller implementation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tab bar controller implementation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		238FB97326E756D8008FD89D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +167,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2360EB8926EF5451002C252E /* home */ = {
+			isa = PBXGroup;
+			children = (
+				2360EB9826EF567F002C252E /* Home.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
 		238FB96726E756D8008FD89D = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +235,7 @@
 		23EE7E7F26E7578A00C50732 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2360EB9A26EF5E33002C252E /* blank_image.png */,
 				23EE7ED726E76ECC00C50732 /* home.json */,
 				23EE7ED526E76EC100C50732 /* search.json */,
 				23EE7ED326E76EB900C50732 /* saved.json */,
@@ -235,6 +248,7 @@
 		23EE7E8026E7579400C50732 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2360EB8926EF5451002C252E /* home */,
 				23EE7E8526E757BB00C50732 /* Screen5 */,
 				23EE7E8426E757B600C50732 /* Screen4 */,
 				23EE7E8326E757AE00C50732 /* Screen3 */,
@@ -444,6 +458,7 @@
 				238FB98326E756DB008FD89D /* LaunchScreen.storyboard in Resources */,
 				238FB98026E756DB008FD89D /* Assets.xcassets in Resources */,
 				23EE7ED626E76EC100C50732 /* search.json in Resources */,
+				2360EB9B26EF5E33002C252E /* blank_image.png in Resources */,
 				238FB97B26E756D8008FD89D /* Main.storyboard in Resources */,
 				23EE7ED826E76ECC00C50732 /* home.json in Resources */,
 				23EE7ED426E76EB900C50732 /* saved.json in Resources */,
@@ -596,6 +611,7 @@
 				23EE7E9C26E757EE00C50732 /* Screen2ViewController.swift in Sources */,
 				23EE7EA826E757FE00C50732 /* Screen3ViewController.swift in Sources */,
 				23EE7E9B26E757EE00C50732 /* Screen2Models.swift in Sources */,
+				2360EB9926EF567F002C252E /* Home.swift in Sources */,
 				23EE7E9826E757EE00C50732 /* Screen2Presenter.swift in Sources */,
 				23EE7EB226E7580F00C50732 /* Screen4Router.swift in Sources */,
 				23EE7E8E26E757D500C50732 /* Screen1Router.swift in Sources */,
