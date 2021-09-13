@@ -29,11 +29,48 @@ class ViewController: UIViewController {
         }else {
             print("items not found.")
         }
-        
+        populateNavigationBarItemsWithViews()
         present(tabBarVc, animated: true) {
         }
     }
+    func populateNavigationBarItemsWithViews(){
+        let itemsLength = tabBarVc.tabBar.items?.count
+        
+        if let count = itemsLength {
+            for i in 0...count - 1 {
+                let item = tabBarVc.tabBar.items![i]
+                viewDidLayoutSubviews()
+                let itemImageView = item.view?.subviews.filter { uiview in
+                    uiview is UIImageView
+                }.first
+                
+                let frame = itemImageView?.frame
+                let animationView : AnimationView = .init(name: lottieJsons[i])
+                animationView.frame = frame!
+                animationView.loopMode = .loop
+                
+                item.view?.addSubview(animationView)
+                animationView.play()
+                
+                print("----after: \(item.view?.subviews.count)")
+                item.view?.subviews.forEach({ v in
+                    print("----frame: \(v.frame)")
+                    if v is AnimationView {
+                        print("---- animationView")
+                    }else if v is UIImageView{
+                        print("---image view")
+                    }
+                })
+            }
+            
+        }
+        
+        
+        
+    }
+    
 }
+
 
 extension ViewController : UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
@@ -50,7 +87,7 @@ extension ViewController : UITabBarControllerDelegate {
         animationView.loopMode = .playOnce
         item.view?.addSubview(animationView)
         animationView.play { value in
-
+            
             animationView.removeFromSuperview()
             item.selectedImage = UIImage(named: self.selectedImages[tabBarController.selectedIndex])
             if(self.currentSelectedIndex != tabBarController.selectedIndex){
