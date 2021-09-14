@@ -7,14 +7,15 @@ class Home: UITabBarController {
     let deselectedImages = ["home-deselected","search-deselected","saved-deselected","more-deselected"]
     var animationViews : [AnimationView?] = []
     var currentIndex = 0
-    
+    let itemNames = ["Home", "Search", "Saved", "More"]
+    var viewControllersList : [UIViewController] = []
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         print("-----+++++viewDidLayoutSubviews")
     }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-       print("-----+++++viewWillLayoutSubviews")
+        print("-----+++++viewWillLayoutSubviews")
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -25,9 +26,14 @@ class Home: UITabBarController {
         super.viewDidLoad()
         print("-----+++++viewDidLoad")
         self.delegate = self
+        let vc1 = Screen1ViewController()
+        let vc2 = Screen2ViewController()
+        let vc3 = Screen3ViewController()
+        let vc4 = Screen4ViewController()
+        viewControllersList = [vc1,vc2,vc3,vc4]
+        //        self.tabBar.isHidden = true
         setupTabbar()
-//        self.tabBar.isHidden = true
-       
+        
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -36,15 +42,13 @@ class Home: UITabBarController {
         
     }
     func setupTabbar(){
-        let vc1 = Screen1ViewController()
-        let vc2 = Screen2ViewController()
-        let vc3 = Screen3ViewController()
-        let vc4 = Screen4ViewController()
-        self.setViewControllers([vc1, vc2, vc3, vc4], animated: true)
+        self.setViewControllers(viewControllersList, animated: true)
         self.modalPresentationStyle = .fullScreen
         if let items  = self.tabBar.items {
             for item in items {
-                item.image = UIImage(named: deselectedImages[items.firstIndex(of: item)!])
+                let index = items.firstIndex(of: item)!
+                item.image = UIImage(named: deselectedImages[index])
+                item.title = itemNames[index]
             }
         } else {
             print("items not found.")
@@ -74,21 +78,22 @@ class Home: UITabBarController {
             }
         }
         animationViews[currentIndex]?.play(completion: { value in
-//            self.tabBar.isHidden = false
+            //            self.tabBar.isHidden = false
         })
     }
     @objc func onSelect(_ sender : UITapGestureRecognizer){
         if let tag  = sender.view?.tag {
             self.onItemChanged(index: tag)
+            self.setPage(index: tag)
         }
-   
+        
     }
     
     func onItemChanged(index : Int){
         if currentIndex == index {
             return
         }
-//        self.selectedViewController =
+        //        self.selectedViewController =
         let endFrame = animationViews[currentIndex]?.animation?.endFrame
         
         animationViews[currentIndex]?.play(fromFrame: endFrame, toFrame: 1.0, loopMode: .playOnce, completion: { value in
@@ -98,6 +103,9 @@ class Home: UITabBarController {
             self.currentIndex = index
         })
         
+    }
+    func setPage(index: Int){
+        self.selectedViewController = viewControllersList[index]
     }
 }
 
